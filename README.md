@@ -91,15 +91,14 @@ Crea un archivo .env en la raíz del proyecto y agrega las siguientes variables 
 4.	**Ejecuta el contenedor y valida los logs:**
 Ejecuta el contenedor de Docker utilizando la imagen creada anteriormente con el comando:
     ```
-    docker run --name $<CONTAINER_NAME>\
-    --env BUCKET_NAME=$<BUCKET_NAME> \
+    docker run --name <CONTAINER_NAME> \
     --env WEBEX_BOT_TOKEN= <WEBEX_BOT_TOKEN> \
     --env AWS_REGION= <AWS_REGION> \
     --env AWS_ACCESS_KEY_ID= <AWS_ACCESS_KEY_ID> \
     --env AWS_SECRET_ACCESS_KEY= <WS_SECRET_ACCESS_KEY> \
     --env AWS_AGENT_ALIAS_ID= <AWS_AGENT_ALIAS_ID> \
     --env AWS_AGENT_ID= <AWS_AGENT_ID> \
-    --restart=always -d <CONTAINER_NAME>:$<TAG> 
+    --restart=always -d <IMAGE_NAME>:<TAG> 
     ```
     Para revisar los logs y validar el despliegue exitoso del bot ejecuta el siguiente comando:
     ```
