@@ -48,7 +48,6 @@ const {
   
       for await (let chunkEvent of response.completion) {
         const chunk = chunkEvent.chunk;
-        console.log(chunk);
         const decodedResponse = new TextDecoder("utf-8").decode(chunk.bytes);
         completion += decodedResponse;
       }
