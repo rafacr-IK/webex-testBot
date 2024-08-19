@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm install && node --use_strict bot.js"
   },
   "keywords": [],
   "author": "Rafael Camacho Roldán",
@@ -12,6 +12,6 @@
   "dependencies": {
     "@aws-sdk/client-bedrock-agent-runtime": "^3.632.0",
     "dotenv": "^16.4.5",
-    "webex-node-bot-framework": "^2.5.1"
+    "webex-node-bot-framework": "^1.2.0"
   }
 }
