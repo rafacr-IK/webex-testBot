@@ -24,6 +24,8 @@ Este proyecto es un bot para Webex creado utilizando el framework [`webex-node-b
 Asegúrate de que tienes la versión más reciente del framework webex-node-bot-framework y las demás dependencias necesarias:
     ```
     npm install
+    npm audit fix
+    npm update
     ```
 
 3.	**Configuración de variables de entorno:**
@@ -113,6 +115,3 @@ Ejecuta el contenedor de Docker utilizando la imagen creada anteriormente con el
 - [Documentación oficial del framework `webex-node-bot-framework`](https://github.com/WebexSamples/webex-node-bot-framework)
 - [Portal de desarrolladores de Webex](https://developer.webex.com/)
 - [AWS Bedrock Overview](https://aws.amazon.com/bedrock/)
-- [Getting Started with AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html)
-- [AWS Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/)
-- [Integrating AI Services with AWS Bedrock](https://aws.amazon.com/bedrock/integrations/)
