@@ -40,12 +40,12 @@ Crea un archivo .env en la raíz del proyecto y agrega las siguientes variables 
     AWS_AGENT_ALIAS_ID=
     AWS_AGENT_ID=
     ```
-    - ACCESS_TOKEN: El token de acceso de tu bot de Webex.
-    - REGION: La region de AWS donde consumirás el servicio de Bedrock.
-    - AWS_ACCESS_KEY_ID=
-    - AWS_SECRET_ACCESS_KEY=
-    - AWS_AGENT_ALIAS_ID=
-    - AWS_AGENT_ID=
+    - ACCESS_TOKEN: El token de acceso de tu bot de Webex. Este token es necesario para autenticar y permitir que el bot interactúe con la API de Webex.
+	- REGION: La región de AWS donde consumirás el servicio de Bedrock. Debe coincidir con la región en la que tus servicios de AWS están configurados para optimizar el rendimiento y minimizar la latencia.
+	- AWS_ACCESS_KEY_ID: El ID de clave de acceso de AWS. Es parte de las credenciales necesarias para autenticar solicitudes a los servicios de AWS, incluyendo Bedrock.
+	- AWS_SECRET_ACCESS_KEY: La clave de acceso secreta de AWS.
+	- AWS_AGENT_ALIAS_ID: El alias del agente en AWS Bedrock. Este identificador se usa para referenciar un alias específico de tu agente, facilitando la gestión y acceso a diferentes versiones del agente.
+	- AWS_AGENT_ID: El identificador único del agente en AWS Bedrock. Este ID es crucial para apuntar al agente correcto cuando realizas solicitudes o configuraciones a través de Bedrock.
 
 4.	**Inicial el bot:**
 Para iniciar el bot ejecuta:
@@ -77,12 +77,12 @@ Crea un archivo .env en la raíz del proyecto y agrega las siguientes variables 
     AWS_AGENT_ALIAS_ID=
     AWS_AGENT_ID=
     ```
-    - ACCESS_TOKEN: El token de acceso de tu bot de Webex.
-    - REGION: La region de AWS donde consumirás el servicio de Bedrock.
-    - AWS_ACCESS_KEY_ID=
-    - AWS_SECRET_ACCESS_KEY=
-    - AWS_AGENT_ALIAS_ID=
-    - AWS_AGENT_ID=
+    - ACCESS_TOKEN: El token de acceso de tu bot de Webex. Este token es necesario para autenticar y permitir que el bot interactúe con la API de Webex.
+	- REGION: La región de AWS donde consumirás el servicio de Bedrock. Debe coincidir con la región en la que tus servicios de AWS están configurados para optimizar el rendimiento y minimizar la latencia.
+	- AWS_ACCESS_KEY_ID: El ID de clave de acceso de AWS. Es parte de las credenciales necesarias para autenticar solicitudes a los servicios de AWS, incluyendo Bedrock.
+	- AWS_SECRET_ACCESS_KEY: La clave de acceso secreta de AWS.
+	- AWS_AGENT_ALIAS_ID: El alias del agente en AWS Bedrock. Este identificador se usa para referenciar un alias específico de tu agente, facilitando la gestión y acceso a diferentes versiones del agente.
+	- AWS_AGENT_ID: El identificador único del agente en AWS Bedrock. Este ID es crucial para apuntar al agente correcto cuando realizas solicitudes o configuraciones a través de Bedrock.
     
 3.	**Constrir la imagen de docker:**
     ```
